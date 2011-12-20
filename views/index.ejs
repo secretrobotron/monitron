@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>monitron</title>
+    <style>
+      html, body {
+        font: 12pt helvetica, sans;
+      }
+      #header {
+      }
+      #settings {
+      }
+      .settings-screens {
+        margin-left: 1em;
+      }
+      .settings-monitors {
+        margin-left: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1><%= hostname %></h1>
+      <h3>monitron xrandr interface</h3>
+    </div>
+    <div id="settings">
+      <%- partial( "screens" ) %>
+    </div>
+  </body>
+</html>

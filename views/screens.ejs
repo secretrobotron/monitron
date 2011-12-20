@@ -1,0 +1,9 @@
+<div class="settings-screens">
+  <% for( var i in settings.screens ) { %>
+    <% var screen = settings.screens[ i ]; %>
+    <h2>Screen <%= screen.id %></h2>
+  <% }; %>
+  <div class="settings-monitors">
+    <%- partial( "monitors" ) %>
+  </div>
+</div>
